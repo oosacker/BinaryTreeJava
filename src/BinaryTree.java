@@ -64,11 +64,13 @@ public class BinaryTree {
         int count = 0;
 
         while(current.getKey() != key) {
-            if (current.getKey() < key) {
+            if (current.getKey() > key) {
                 current = current.getLeft();
+                System.out.println("Left");
             }
-            else {
+            else if (current.getKey() < key) {
                 current = current.getRight();
+                System.out.println("Right");
             }
 
             if(current == null) {
@@ -78,7 +80,7 @@ public class BinaryTree {
             count++;
         }
 
-        System.out.println("Found after "+count+" loops");
+        System.out.println("Found '"+key+ "' after "+count+" iterations");
 
     }
 

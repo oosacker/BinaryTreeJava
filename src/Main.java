@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-	    BinaryTree b = new BinaryTree(3);
+	    BinaryTree b = new BinaryTree(9);
 
 	    b.addNode(5);
         b.addNode(6);
